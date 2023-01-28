@@ -28,7 +28,7 @@ jobs:
           token: ${{ env.MMX_TELEGRAM_TOKEN }}
           format: html
           message: |
-            MMX Node release ${{ steps.get_version.outputs.VERSION }}      
+            MMX Node ${{ steps.get_version.outputs.VERSION }} (with compressed plot support)    
             ${{ github.event.repository.url }}/releases/${{ steps.get_version.outputs.VERSION }}
             
             <a href="https://t.me/mmx_node">Telegram channel</a>
@@ -44,7 +44,7 @@ jobs:
           token: ${{ env.MMX_TELEGRAM_TOKEN }}
           format: html
           message: |
-            MMX Node release ${{ steps.get_version.outputs.VERSION }}      
+            MMX Node ${{ steps.get_version.outputs.VERSION }} (with compressed plot support)     
             ${{ github.event.repository.url }}/releases/${{ steps.get_version.outputs.VERSION }}
             
             <a href="https://t.me/mmx_node">Telegram channel</a>
@@ -57,5 +57,5 @@ jobs:
         uses: Ilshidur/action-discord@master
         with:
           args: |
-            MMX Node release ${{ steps.get_version.outputs.VERSION }}      
+            MMX Node ${{ steps.get_version.outputs.VERSION }} (with compressed plot support)
             ${{ github.event.repository.url }}/releases/${{ steps.get_version.outputs.VERSION }} 
